@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("arrival_station");
             $table->dateTime("departure_time");
             $table->dateTime("arrival_time");
-            $table->foreignId("train_id");
+            $table->smallInteger("train_id");
             $table->smallInteger("number_of_carriages")->nullable();
             $table->boolean("on_time");
             $table->boolean("cancelled");
